@@ -38,6 +38,7 @@ Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 18 y Ta
 
 ## 📂 Estructura del Proyecto
 
+```bash
 portfolio/
 │
 ├── app/
@@ -67,7 +68,7 @@ portfolio/
 └── public/
     ├── cv-johan-burbano.pdf    # Archivo del currículum vitae
     └── *.jpg                   # Imágenes y recursos gráficos de los proyectos
-
+```
 
 ## 🚀 Instalación y Uso
 
@@ -79,37 +80,37 @@ portfolio/
 ### Instalación
 
 1. Clona el repositorio:
-\`\`\`bash
+```bash
 git clone https://github.com/jhojax12866/portfolio.git
 cd portfolio
-\`\`\`
+```
 
 2. Instala las dependencias:
-\`\`\`bash
+```bash
 npm install
 # o
 yarn install
 # o
 pnpm install
-\`\`\`
+```
 
 3. Ejecuta el servidor de desarrollo:
-\`\`\`bash
+```bash
 npm run dev
 # o
 yarn dev
 # o
 pnpm dev
-\`\`\`
+```
 
 4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
 ### Build para Producción
 
-\`\`\`bash
+```bash
 npm run build
 npm run start
-\`\`\`
+```
 
 ## 🌟 Secciones del Portafolio
 
@@ -143,25 +144,25 @@ Información de contacto con enlaces directos a redes sociales y email.
 
 Edita el archivo `app/globals.css` para modificar el tema de colores:
 
-\`\`\`css
+```css
 @theme inline {
   --color-background: 10 25 47;
   --color-primary: 100 255 218;
   /* ... más colores */
 }
-\`\`\`
+```
 
 ### Agregar/Modificar Traducciones
 
 Edita el archivo `lib/i18n.ts` para agregar o modificar traducciones:
 
-\`\`\`typescript
+```typescript
 export const translations = {
   es: { /* traducciones en español */ },
   en: { /* traducciones en inglés */ },
   pt: { /* traducciones en portugués */ }
 }
-\`\`\`
+```
 
 ### Actualizar Contenido
 
@@ -195,7 +196,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 - LinkedIn: [Johan Fernando Burbano](https://www.linkedin.com/in/jhojan-fernando-burbano-6968ab324/)
 - Email: Jhojanfer12@gmail.com
 
-
 ## 🙏 Agradecimientos
 
 - [Next.js](https://nextjs.org/) por el increíble framework
@@ -209,7 +209,3 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ⭐ Si te gusta este proyecto, no olvides darle una estrella en GitHub!
 
 Desarrollado con ❤️ por Johan Fernando Burbano
-
-
-
-
