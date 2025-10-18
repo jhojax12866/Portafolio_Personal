@@ -1,6 +1,6 @@
 # 🚀 Portfolio Personal - Johan Fernando Burbano
 
-Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 19 y TailwindCSS v4. Diseñado para mostrar mis habilidades, experiencia y proyectos como Desarrollador Frontend.
+Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 18 y TailwindCSS v4. Diseñado para mostrar mis habilidades, experiencia y proyectos como Desarrollador Frontend.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
@@ -21,7 +21,7 @@ Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 19 y Ta
 
 ### Frontend
 - **Next.js 15** - Framework de React con App Router
-- **React 19** - Biblioteca de JavaScript para interfaces de usuario
+- **React 18** - Biblioteca de JavaScript para interfaces de usuario
 - **TypeScript** - Superset tipado de JavaScript
 - **TailwindCSS v4** - Framework de CSS utility-first
 
@@ -40,30 +40,34 @@ Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 19 y Ta
 
 \`\`\`
 portfolio/
+│
 ├── app/
-│   ├── layout.tsx          # Layout principal con providers
-│   ├── page.tsx            # Página principal del portafolio
-│   └── globals.css         # Estilos globales y tema
+│   ├── layout.tsx              # Layout principal con providers
+│   ├── page.tsx                # Página principal del portafolio
+│   └── globals.css             # Estilos globales y tema
+│
 ├── components/
-│   ├── navbar.tsx          # Barra de navegación superior
-│   ├── navigation.tsx      # Menú lateral desplegable
-│   ├── hero-section.tsx    # Sección hero con animaciones
-│   ├── about-section.tsx   # Sección sobre mí
-│   ├── skills-section.tsx  # Habilidades con tabs y progress bars
-│   ├── experience-section.tsx    # Experiencia laboral con accordion
-│   ├── education-section.tsx     # Educación con timeline
-│   ├── projects-section.tsx      # Proyectos con dialogs
-│   ├── certificates-section.tsx  # Certificados con hover cards
-│   ├── contact-section.tsx       # Información de contacto
-│   ├── tech-background.tsx       # Fondo animado con partículas
-│   └── ui/                       # Componentes UI reutilizables
+│   ├── navbar.tsx              # Barra de navegación superior
+│   ├── navigation.tsx          # Menú lateral desplegable
+│   ├── hero-section.tsx        # Sección hero con animaciones
+│   ├── about-section.tsx       # Sección sobre mí
+│   ├── skills-section.tsx      # Habilidades con tabs y progress bars
+│   ├── experience-section.tsx  # Experiencia laboral con accordion
+│   ├── education-section.tsx   # Educación con timeline
+│   ├── projects-section.tsx    # Proyectos con dialogs
+│   ├── certificates-section.tsx # Certificados con hover cards
+│   ├── contact-section.tsx     # Información de contacto
+│   ├── tech-background.tsx     # Fondo animado con partículas
+│   └── ui/                     # Componentes UI reutilizables
+│
 ├── lib/
-│   ├── i18n.ts             # Traducciones multiidioma
-│   ├── language-provider.tsx     # Provider de idioma
-│   └── utils.ts            # Utilidades y helpers
+│   ├── i18n.ts                 # Traducciones multiidioma
+│   ├── language-provider.tsx   # Provider de idioma
+│   └── utils.ts                # Utilidades y helpers
+│
 └── public/
-    ├── cv-johan-burbano.pdf      # Curriculum vitae
-    └── *.jpg                     # Imágenes de proyectos
+    ├── cv-johan-burbano.pdf    # Curriculum vitae
+    └── *.jpg                   # Imágenes de proyectos
 \`\`\`
 
 ## 🚀 Instalación y Uso
@@ -191,7 +195,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 - GitHub: [@jhojax12866](https://github.com/jhojax12866)
 - LinkedIn: [Johan Fernando Burbano](https://www.linkedin.com/in/jhojan-fernando-burbano-6968ab324/)
 - Email: Jhojanfer12@gmail.com
-- Teléfono: +57 322 423 0731
+
 
 ## 🙏 Agradecimientos
 
@@ -206,5 +210,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ⭐ Si te gusta este proyecto, no olvides darle una estrella en GitHub!
 
 Desarrollado con ❤️ por Johan Fernando Burbano
+
 
 
