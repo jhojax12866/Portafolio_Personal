@@ -14,31 +14,46 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("es")
-  const [mounted, setMounted] = useState(false)
+  const [isClient, setIsClient] = useState(false)
 
+  // 🧠 Se asegura de que solo se ejecute en cliente (no durante prerender)
   useEffect(() => {
-    setMounted(true)
-    const savedLanguage = localStorage.getItem("language") as Language | null
-    if (savedLanguage) setLanguage(savedLanguage)
+    setIsClient(true)
+    const saved = localStorage.getItem("language") as Language | null
+    if (saved) setLanguage(saved)
   }, [])
 
   useEffect(() => {
-    if (!mounted) return
-    localStorage.setItem("language", language)
-  }, [language, mounted])
-
-  const handleSetLanguage = (lang: Language) => {
-    setLanguage(lang)
-  }
+    if (isClient) {
+      localStorage.setItem("language", language)
+    }
+  }, [language, isClient])
 
   const t = translations[language]
 
-  if (!mounted) {
-    return <>{children}</>
+  // 🔒 Previene errores en prerender
+  if (!isClient) {
+    return (
+      <LanguageContext.Provider
+        value={{
+          language,
+          setLanguage: () => {},
+          t: translations.es,
+        }}
+      >
+        {children}
+      </LanguageContext.Provider>
+    )
   }
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
+    <LanguageContext.Provider
+      value={{
+        language,
+        setLanguage,
+        t,
+      }}
+    >
       {children}
     </LanguageContext.Provider>
   )
@@ -46,8 +61,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext)
-  if (context === undefined) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
+  if (!context) {
+    // 🚨 En lugar de lanzar error, retorna un fallback seguro
+    return {
+      language: "es" as Language,
+      setLanguage: () => {},
+      t: translations.es,
+    }
   }
   return context
 }
