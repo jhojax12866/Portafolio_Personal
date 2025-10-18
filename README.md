@@ -3,7 +3,7 @@
 Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 18 y TailwindCSS v4. Diseñado para mostrar mis habilidades, experiencia y proyectos como Desarrollador Frontend.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-4-38B2AC?style=for-the-badge&logo=tailwind-css)
 
@@ -38,37 +38,36 @@ Portafolio web moderno y tecnológico desarrollado con Next.js 15, React 18 y Ta
 
 ## 📂 Estructura del Proyecto
 
-\`\`\`
 portfolio/
 │
 ├── app/
-│   ├── layout.tsx              # Layout principal con providers
-│   ├── page.tsx                # Página principal del portafolio
-│   └── globals.css             # Estilos globales y tema
+│   ├── layout.tsx              # Estructura base y configuración de providers globales
+│   ├── page.tsx                # Página principal del portafolio (Home)
+│   └── globals.css             # Estilos globales, variables y tema principal
 │
 ├── components/
 │   ├── navbar.tsx              # Barra de navegación superior
-│   ├── navigation.tsx          # Menú lateral desplegable
-│   ├── hero-section.tsx        # Sección hero con animaciones
-│   ├── about-section.tsx       # Sección sobre mí
-│   ├── skills-section.tsx      # Habilidades con tabs y progress bars
-│   ├── experience-section.tsx  # Experiencia laboral con accordion
-│   ├── education-section.tsx   # Educación con timeline
-│   ├── projects-section.tsx    # Proyectos con dialogs
-│   ├── certificates-section.tsx # Certificados con hover cards
-│   ├── contact-section.tsx     # Información de contacto
-│   ├── tech-background.tsx     # Fondo animado con partículas
-│   └── ui/                     # Componentes UI reutilizables
+│   ├── navigation.tsx          # Menú lateral o de navegación móvil
+│   ├── hero-section.tsx        # Sección de presentación con animaciones de entrada
+│   ├── about-section.tsx       # Sección “Sobre mí” con descripción personal
+│   ├── skills-section.tsx      # Habilidades con tabs y barras de progreso animadas
+│   ├── experience-section.tsx  # Experiencia laboral con acordeón interactivo
+│   ├── education-section.tsx   # Formación académica representada en línea de tiempo
+│   ├── projects-section.tsx    # Proyectos destacados con modales (dialogs)
+│   ├── certificates-section.tsx # Certificados con tarjetas interactivas (hover cards)
+│   ├── contact-section.tsx     # Sección de contacto con enlaces directos
+│   ├── tech-background.tsx     # Fondo animado con partículas y efectos visuales
+│   └── ui/                     # Componentes UI reutilizables (botones, modales, inputs, etc.)
 │
 ├── lib/
-│   ├── i18n.ts                 # Traducciones multiidioma
-│   ├── language-provider.tsx   # Provider de idioma
-│   └── utils.ts                # Utilidades y helpers
+│   ├── i18n.ts                 # Configuración de traducciones e internacionalización (i18n)
+│   ├── language-provider.tsx   # Contexto y provider para manejo de idiomas
+│   └── utils.ts                # Funciones auxiliares y utilidades generales
 │
 └── public/
-    ├── cv-johan-burbano.pdf    # Curriculum vitae
-    └── *.jpg                   # Imágenes de proyectos
-\`\`\`
+    ├── cv-johan-burbano.pdf    # Archivo del currículum vitae
+    └── *.jpg                   # Imágenes y recursos gráficos de los proyectos
+
 
 ## 🚀 Instalación y Uso
 
@@ -210,6 +209,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ⭐ Si te gusta este proyecto, no olvides darle una estrella en GitHub!
 
 Desarrollado con ❤️ por Johan Fernando Burbano
+
 
 
 
