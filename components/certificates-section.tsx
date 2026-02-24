@@ -1,6 +1,7 @@
 "use client"
 
-import { FiAward, FiExternalLink } from "react-icons/fi"
+import React from "react"
+import { FiAward, FiExternalLink, FiLock } from "react-icons/fi"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { useLanguage } from "@/lib/language-provider"
 
@@ -13,30 +14,35 @@ export function CertificatesSection() {
       issuer: t.certificates.cert1.issuer,
       description: t.certificates.cert1.description,
       details: t.certificates.cert1.details,
+      link: "https://www.coursera.org/account/accomplishments/verify/2GD9MHFT847L",
     },
     {
       title: t.certificates.cert2.title,
       issuer: t.certificates.cert2.issuer,
       description: t.certificates.cert2.description,
       details: t.certificates.cert2.details,
+      link: "https://www.coursera.org/account/accomplishments/verify/WYXDMB3ARSJB",
     },
     {
       title: t.certificates.cert3.title,
       issuer: t.certificates.cert3.issuer,
       description: t.certificates.cert3.description,
       details: t.certificates.cert3.details,
+      link: "https://www.coursera.org/account/accomplishments/verify/J0HADOASGZ91",
     },
     {
       title: t.certificates.cert4.title,
       issuer: t.certificates.cert4.issuer,
       description: t.certificates.cert4.description,
       details: t.certificates.cert4.details,
+      link: "https://www.coursera.org/account/accomplishments/verify/FL4MHXR8CQNW",
     },
     {
       title: t.certificates.cert5.title,
       issuer: t.certificates.cert5.issuer,
       description: t.certificates.cert5.description,
       details: t.certificates.cert5.details,
+      link: null,
     },
   ]
 
@@ -64,7 +70,25 @@ export function CertificatesSection() {
                         {cert.title}
                       </h3>
                       <p className="text-sm text-primary font-semibold mb-1">{cert.issuer}</p>
-                      <p className="text-xs text-muted-foreground">{cert.description}</p>
+                      <p className="text-xs text-muted-foreground mb-3">{cert.description}</p>
+
+                      {cert.link ? (
+                        <a
+                          href={cert.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-primary/80 transition-colors bg-primary/10 px-3 py-1.5 rounded-full border border-primary/30 hover:border-primary"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <FiExternalLink className="w-3.5 h-3.5" />
+                          {t.certificates.viewCert}
+                        </a>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground bg-secondary px-3 py-1.5 rounded-full border border-border">
+                          <FiLock className="w-3.5 h-3.5" />
+                          {t.certificates.noLink}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
