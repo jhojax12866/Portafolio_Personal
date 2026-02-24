@@ -20,8 +20,8 @@ export function Navbar({ onMenuClick }: NavbarProps) {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a")
-    link.href = "/CV_Dev_Johan_Burbano.pdf"
-    link.download = "CV_Dev_Johan_Burbano.pdf"
+    link.href = "/CV_JOHAN_BURBANO.pdf"
+    link.download = "CV_JOHAN_BURBANO.pdf"
     link.target = "_blank"
     document.body.appendChild(link)
     link.click()
