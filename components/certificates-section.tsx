@@ -14,14 +14,14 @@ export function CertificatesSection() {
       issuer: t.certificates.cert1.issuer,
       description: t.certificates.cert1.description,
       details: t.certificates.cert1.details,
-      link: "https://www.coursera.org/account/accomplishments/verify/2GD9MHFT847L",
+      link: "https://www.coursera.org/account/accomplishments/verify/B0YVGYI9PGRW",
     },
     {
       title: t.certificates.cert2.title,
       issuer: t.certificates.cert2.issuer,
       description: t.certificates.cert2.description,
       details: t.certificates.cert2.details,
-      link: "https://www.coursera.org/account/accomplishments/verify/WYXDMB3ARSJB",
+      link: "https://www.coursera.org/account/accomplishments/verify/3FG19XWPDB31",
     },
     {
       title: t.certificates.cert3.title,
@@ -35,14 +35,14 @@ export function CertificatesSection() {
       issuer: t.certificates.cert4.issuer,
       description: t.certificates.cert4.description,
       details: t.certificates.cert4.details,
-      link: "https://www.coursera.org/account/accomplishments/verify/FL4MHXR8CQNW",
+      link: "https://www.coursera.org/account/accomplishments/verify/PQX0R7B9XXN5",
     },
     {
       title: t.certificates.cert5.title,
       issuer: t.certificates.cert5.issuer,
       description: t.certificates.cert5.description,
       details: t.certificates.cert5.details,
-      link: null,
+      link: "https://credsverse.com/credentials/5abb0908-9fc7-4d0b-b6e8-c0aeb5af530a",
     },
   ]
 
