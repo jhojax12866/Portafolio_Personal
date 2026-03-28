@@ -19,9 +19,16 @@ export function Navbar({ onMenuClick }: NavbarProps) {
   ]
 
   const handleDownloadCV = () => {
+    const cvFiles = {
+      es: { path: "/cv/CV_JOHAN_BURBANO.pdf", name: "CV_Johan_Burbano_ES.pdf" },
+      en: { path: "/cv/CV_JOHAN_FERNANDO_BURBANO_INGLES.pdf", name: "CV_Johan_Burbano_EN.pdf" },
+      pt: { path: "/cv/CV_JOHAN_FERNANDO_BURBANO_PORT.pdf", name: "CV_Johan_Burbano_PT.pdf" },
+    }
+
+    const cvFile = cvFiles[language]
     const link = document.createElement("a")
-    link.href = "/CV_JOHAN_BURBANO.pdf"
-    link.download = "CV_JOHAN_BURBANO.pdf"
+    link.href = cvFile.path
+    link.download = cvFile.name
     link.target = "_blank"
     document.body.appendChild(link)
     link.click()
